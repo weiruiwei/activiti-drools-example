@@ -20,5 +20,6 @@ public class MyStartProcess {
         RuntimeService runtimeService  = (RuntimeService)applicationContext.getBean("runtimeService");
         Map<String ,Object> param = new HashMap<>();
         runtimeService.startProcessInstanceByKey("demo","123",param);
+
     }
 }
