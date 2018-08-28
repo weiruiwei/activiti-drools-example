@@ -1,0 +1,9 @@
+package asdfas
+import com.bauer.java.activitidrools.bean.UserBean
+
+rule "testuser"
+  when
+     $ruleParam :UserBean(age > 20)
+  then
+     System.out.println("hello world---");
+end
